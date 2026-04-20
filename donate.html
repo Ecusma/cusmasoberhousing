@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAGE TITLE | Cusma Sober Housing</title>
+    <title>Donate | Cusma Sober Housing</title>
 
     <link rel="icon" href="public/images/favicon.ico" />
     <link rel="stylesheet" href="public/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="public/js/main.js" defer></script>
   </head>
 
   <body>
     <!-- Header -->
     <div class="header">
-      <img src="public/images/csh-logo.png" alt="Cusma Sober Housing" class="avatar" />
+      <img
+        src="public/images/csh-logo.png"
+        alt="Cusma Sober Housing"
+        class="avatar"
+      />
       <h1>Cusma Sober Housing</h1>
       <p class="tagline">Safe, Supportive, Sober</p>
     </div>
@@ -33,94 +41,77 @@
     <!-- Page Content -->
     <div class="container">
       <div class="page-content">
-          <h2>Donate</h2>
-          <img src="public/images/csh-slogan-logo.png" alt="Donate" />
+        <h2>Donate</h2>
+        <img src="public/images/csh-slogan-logo.png" alt="Donate" />
 
-          <div class="info-section">
-            <h3>Help Keep Sober Living Affordable and Available</h3>
-            <p>
-              Your generous donations help us maintain affordable housing
-              options for individuals working on their recovery. Every
-              contribution makes a difference in someone's journey to sobriety.
-            </p>
-          </div>
+        <div class="info-section">
+          <h3>Help Keep Sober Living Affordable and Available</h3>
+          <p>
+            Your generous donations help us maintain affordable housing options
+            for individuals working on their recovery. Every contribution makes
+            a difference in someone's journey to sobriety.
+          </p>
+        </div>
 
-          <div class="info-section">
-            <h3>How Your Donation Helps</h3>
-            <ul class="info-list">
-              <li>Subsidize rent for residents in financial need</li>
-              <li>Maintain and improve our facilities</li>
-              <li>Provide recovery resources and materials</li>
-              <li>Support community activities and programs</li>
-              <li>Ensure 24/7 availability of support</li>
-              <li>Expand our capacity to serve more individuals</li>
-            </ul>
-          </div>
+        <div class="info-section">
+          <h3>How Your Donation Helps</h3>
+          <ul class="info-list">
+            <li>Subsidize rent for residents in financial need</li>
+            <li>Maintain and improve our facilities</li>
+            <li>Provide recovery resources and materials</li>
+            <li>Support community activities and programs</li>
+            <li>Ensure 24/7 availability of support</li>
+            <li>Expand our capacity to serve more individuals</li>
+          </ul>
+        </div>
 
-          <div class="info-section">
-            <h3>Ways to Give</h3>
-            <p>
-              We accept donations of all sizes. Whether it's a one-time gift or
-              a recurring contribution, your support helps us continue our
-              mission of providing safe, supportive housing for those in
-              recovery.
-            </p>
-            <button
-              class="donate-btn"
-              onclick="
-                alert(
-                  'Thank you for your interest in donating! Please contact us for donation information.',
-                )
-              "
-            >
-              Make a Donation
-            </button>
-          </div>
+        <div class="info-section">
+          <h3>Ways to Give</h3>
+          <p>
+            We accept donations of all sizes. Whether it's a one-time gift or a
+            recurring contribution, your support helps us continue our mission
+            of providing safe, supportive housing for those in recovery.
+          </p>
+          <button
+            class="donate-btn"
+            onclick="
+              alert(
+                'Thank you for your interest in donating! Please contact us for donation information.',
+              )
+            "
+          >
+            Make a Donation
+          </button>
+        </div>
 
-          <div class="info-section">
-            <h3>Other Ways to Support</h3>
-            <ul class="info-list">
-              <li>Volunteer your time</li>
-              <li>Donate household items</li>
-              <li>Spread awareness about our mission</li>
-              <li>Become a community partner</li>
-            </ul>
-          </div>
+        <div class="info-section">
+          <h3>Other Ways to Support</h3>
+          <ul class="info-list">
+            <li>Volunteer your time</li>
+            <li>Donate household items</li>
+            <li>Spread awareness about our mission</li>
+            <li>Become a community partner</li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-      <p>Built by Elizabeth Cusma</p>
+      <h3>Contact us</h3>
+      <h4>
+        For general inquiries, availability, or other questions, call:
+        <span
+          class="phone"
+          data-user="330"
+          data-mid="324"
+          data-end="3981"
+        ></span>
+      </h4>
+
+      <br />
       <p>&copy; 2026 Cusma Sober Housing</p>
     </div>
 
-    <!-- Modal (keep this for galleries) -->
-    <div id="photoModal" class="modal" onclick="closeModal()">
-      <span class="close-modal">&times;</span>
-      <img class="modal-content" id="modalImg" />
-    </div>
-
-    <!-- Minimal JS (only what you still need) -->
-    <script>
-      function openModal(galleryItem) {
-        event.stopPropagation();
-        const modal = document.getElementById("photoModal");
-        const modalImg = document.getElementById("modalImg");
-        const img = galleryItem.querySelector("img");
-
-        modal.classList.add("active");
-        modalImg.src = img.src;
-      }
-
-      function closeModal() {
-        document.getElementById("photoModal").classList.remove("active");
-      }
-
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closeModal();
-      });
-    </script>
   </body>
 </html>
