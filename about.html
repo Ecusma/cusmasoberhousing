@@ -10,14 +10,21 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="public/js/main.js" defer></script>
-</head>
+  </head>
 
   <body>
     <!-- Header -->
     <div class="header">
-      <img src="public/images/csh-logo.png" alt="Cusma Sober Housing" class="avatar" />
+      <img
+        src="public/images/csh-logo.png"
+        alt="Cusma Sober Housing"
+        class="avatar"
+      />
       <h1>Cusma Sober Housing</h1>
       <p class="tagline">Safe, Supportive, Sober</p>
     </div>
@@ -34,83 +41,69 @@
     <!-- Page Content -->
     <div class="container">
       <div class="page-content">
-          <h2>About Us</h2>
-          <img src="public/images/csh-tan-logo.png" alt="About Us" />
+        <h2>About Us</h2>
+        <img src="public/images/csh-tan-logo.png" alt="About Us" />
 
-          <div class="info-section">
-            <h3>Our Mission</h3>
-            <p>
-              Cusma Sober Housing is dedicated to providing safe, supportive,
-              and affordable sober living environments for individuals in
-              recovery. We believe that stable housing is a crucial component of
-              long-term sobriety and personal growth.
-            </p>
-          </div>
+        <div class="info-section">
+          <h3>Our Mission</h3>
+          <p>
+            Cusma Sober Housing is dedicated to providing safe, supportive, and
+            affordable sober living environments for individuals in recovery. We
+            believe that stable housing is a crucial component of long-term
+            sobriety and personal growth.
+          </p>
+        </div>
 
-          <div class="info-section">
-            <h3>Our Approach</h3>
-            <p>
-              We create structured, peer-supported environments where residents
-              can focus on their recovery while building life skills and
-              developing healthy relationships. Our homes emphasize
-              accountability, mutual support, and personal responsibility.
-            </p>
-          </div>
+        <div class="info-section">
+          <h3>Our Approach</h3>
+          <p>
+            We create structured, peer-supported environments where residents
+            can focus on their recovery while building life skills and
+            developing healthy relationships. Our homes emphasize
+            accountability, mutual support, and personal responsibility.
+          </p>
+        </div>
 
-          <div class="info-section">
-            <h3>What We Offer</h3>
-            <ul class="info-list">
-              <li>Structured sober living environment</li>
-              <li>Peer support and accountability</li>
-              <li>Connection to recovery resources</li>
-              <li>Life skills development</li>
-              <li>Community and fellowship</li>
-              <li>Affordable housing options</li>
-            </ul>
-          </div>
+        <div class="info-section">
+          <h3>What We Offer</h3>
+          <ul class="info-list">
+            <li>Structured sober living environment</li>
+            <li>Peer support and accountability</li>
+            <li>Connection to recovery resources</li>
+            <li>Life skills development</li>
+            <li>Community and fellowship</li>
+            <li>Affordable housing options</li>
+          </ul>
+        </div>
 
-          <div class="info-section">
-            <h3>Our Team</h3>
-            <p>
-              Our team consists of dedicated individuals who are passionate
-              about supporting those in recovery. Many of our staff members are
-              in recovery themselves and understand the challenges and triumphs
-              of the journey.
-            </p>
-          </div>
+        <div class="info-section">
+          <h3>Our Team</h3>
+          <p>
+            Our team consists of dedicated individuals who are passionate about
+            supporting those in recovery. Many of our staff members are in
+            recovery themselves and understand the challenges and triumphs of
+            the journey.
+          </p>
         </div>
       </div>
-      
+    </div>
+
     <!-- Footer -->
-    <div class="footer">
+        <div class="footer">
+      <h3>Contact us</h3>
+      <h4>
+        For general inquiries, availability, or other questions, call:
+        <span
+          class="phone"
+          data-user="330"
+          data-mid="324"
+          data-end="3981"
+        ></span>
+      </h4>
+
+      <br />
       <p>&copy; 2026 Cusma Sober Housing</p>
     </div>
 
-    <!-- Modal (keep this for galleries) -->
-    <div id="photoModal" class="modal" onclick="closeModal()">
-      <span class="close-modal">&times;</span>
-      <img class="modal-content" id="modalImg" />
-    </div>
-
-    <!-- Minimal JS (only what you still need) -->
-    <script>
-      function openModal(galleryItem) {
-        event.stopPropagation();
-        const modal = document.getElementById("photoModal");
-        const modalImg = document.getElementById("modalImg");
-        const img = galleryItem.querySelector("img");
-
-        modal.classList.add("active");
-        modalImg.src = img.src;
-      }
-
-      function closeModal() {
-        document.getElementById("photoModal").classList.remove("active");
-      }
-
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closeModal();
-      });
-    </script>
   </body>
 </html>
