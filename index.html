@@ -4,555 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cusma Sober Housing</title>
-    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+    <link rel="icon" href="public/images/favicon.ico" />
     <link rel="stylesheet" href="public/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
+
   <body>
     <div class="header">
-      <img
-        src="public/images/csh-logo.png"
-        alt="Cusma Sober Housing"
-        class="avatar"
-      />
+      <img src="public/images/csh-logo.png" alt="Cusma Sober Housing" class="avatar" />
       <h1>Cusma Sober Housing</h1>
       <p class="tagline">Safe, Supportive, Sober</p>
     </div>
 
     <nav>
-      <a href="#home" class="nav-link active" data-page="home">Home</a>
-      <a href="#mens-house" class="nav-link" data-page="mens-house"
-        >Men's House</a
-      >
-      <a href="#womens-house" class="nav-link" data-page="womens-house"
-        >Women's House</a
-      >
-      <a href="#about" class="nav-link" data-page="about">About Us</a>
-      <a href="#donate" class="nav-link" data-page="donate">Donate</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="mens-house.html">Men's House</a>
+      <a href="womens-house.html">Women's House</a>
+      <a href="about.html">About Us</a>
+      <a href="donate.html">Donate</a>
     </nav>
 
     <div class="container">
-      <!-- Home Page -->
-      <div id="home" class="page active">
-        <div class="blocks-grid">
-          <div class="block" onclick="navigateTo('mens-house')">
-            <img src="public/images/dan-n-nick.png" alt="Men's House" />
-            <div class="block-content">
-              <h2>Men's House</h2>
-              <p>10-person home in Canton, OH</p>
-            </div>
-          </div>
-
-          <div class="block" onclick="navigateTo('womens-house')">
-            <img src="public/images/bettys-logo.png" alt="Women's House" />
-            <div class="block-content">
-              <h2>Women's House</h2>
-              <p>12-person home in Massillon, OH</p>
-            </div>
-          </div>
-
-          <div class="block" onclick="navigateTo('about')">
-            <img src="public/images/csh-tan-logo.png" alt="About Us" />
-            <div class="block-content">
-              <h2>About Us</h2>
-              <p>Meet our team</p>
-            </div>
-          </div>
-
-          <div class="block" onclick="navigateTo('donate')">
-            <img src="public/images/csh-slogan-logo.png" alt="Donate" />
-            <div class="block-content">
-              <h2>Donate</h2>
-              <p>Help keep sober living affordable and available</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Men's House Page -->
-      <div id="mens-house" class="page">
-        <div class="page-content">
-          <h2>Men's House</h2>
+      <div class="blocks-grid">
+        <a href="mens-house.html" class="block">
           <img src="public/images/dan-n-nick.png" alt="Men's House" />
-
-          <div class="info-section">
-            <h3>Location & Capacity</h3>
-            <p>
-              Our men's sober living home is located in Canton, Ohio and
-              accommodates up to 10 residents.
-            </p>
+          <div class="block-content">
+            <h2>Men's House</h2>
+            <p>10-person home in Canton, OH</p>
           </div>
+        </a>
 
-          <div class="info-section">
-            <h3>Amenities</h3>
-            <ul class="info-list">
-              <li>Private and shared bedroom options</li>
-              <li>Fully equipped kitchen</li>
-              <li>Common living areas</li>
-              <li>Laundry facilities on-site</li>
-              <li>Parking available</li>
-              <li>24/7 peer support</li>
-            </ul>
-          </div>
-
-          <div class="info-section">
-            <h3>House Guidelines</h3>
-            <ul class="info-list">
-              <li>Zero tolerance for drugs and alcohol</li>
-              <li>Regular drug testing</li>
-              <li>Mandatory house meetings</li>
-              <li>Participation in recovery activities encouraged</li>
-              <li>Mutual respect and accountability</li>
-            </ul>
-          </div>
-
-          <div class="info-section photo-gallery">
-            <h3>Photo Gallery</h3>
-            <div class="gallery-grid">
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_front.jpeg"
-                  alt="Front of house"
-                />
-                <div class="gallery-caption">Front of men's house</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_back.jpeg"
-                  alt="Rear of men's house"
-                />
-                <div class="gallery-caption">Rear of men's house</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_common_area.jpeg"
-                  alt="Common area"
-                />
-                <div class="gallery-caption">Common area</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_dining_area.jpeg"
-                  alt="Dining Area"
-                />
-                <div class="gallery-caption">Dining Area</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_pantry.jpeg"
-                  alt="Pantry"
-                />
-                <div class="gallery-caption">Pantry</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_living_room.jpeg"
-                  alt="Shared Space"
-                />
-                <div class="gallery-caption">Shared Living Space</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/men_s_house_kitchen.jpeg"
-                  alt="Kitchen"
-                />
-                <div class="gallery-caption">Kitchen</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_bedroom 1.jpeg"
-                  alt="Bedroom 1"
-                />
-                <div class="gallery-caption">Bedroom 1</div>
-              </div>
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/mens-house/mens_house_bedroom2.jpeg"
-                  alt="Bedroom 2"
-                />
-                <div class="gallery-caption">Bedroom 2</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="info-section">
-            <h3>Contact Us</h3>
-            <p>
-              For more information about availability and admissions, please
-              reach out to us.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Women's House Page -->
-      <div id="womens-house" class="page">
-        <div class="page-content">
-          <h2>Women's House</h2>
+        <a href="womens-house.html" class="block">
           <img src="public/images/bettys-logo.png" alt="Women's House" />
-
-          <div class="info-section">
-            <h3>Location & Capacity</h3>
-            <p>
-              Our women's sober living home is located in Massillon, Ohio and
-              accommodates up to 12 residents.
-            </p>
+          <div class="block-content">
+            <h2>Women's House</h2>
+            <p>12-person home in Massillon, OH</p>
           </div>
+        </a>
 
-          <div class="info-section">
-            <h3>Amenities</h3>
-            <ul class="info-list">
-              <li>Private and shared bedroom options</li>
-              <li>Fully equipped kitchen</li>
-              <li>Comfortable common areas</li>
-              <li>Laundry facilities on-site</li>
-              <li>Parking available</li>
-              <li>24/7 peer support</li>
-              <li>Safe and supportive environment</li>
-            </ul>
-          </div>
-
-          <div class="info-section">
-            <h3>House Guidelines</h3>
-            <ul class="info-list">
-              <li>Zero tolerance for drugs and alcohol</li>
-              <li>Regular drug testing</li>
-              <li>Mandatory house meetings</li>
-              <li>Participation in recovery activities encouraged</li>
-              <li>Community and sisterhood focus</li>
-            </ul>
-          </div>
-
-          <div class="info-section photo-gallery">
-            <h3>Photo Gallery</h3>
-            <div class="gallery-grid">
-              <!-- Exterior -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_front_outside_view.jpg"
-                  alt="Exterior View"
-                />
-                <div class="gallery-caption">Exterior View</div>
-              </div>
-
-              <!-- Front sign -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_front_sign.jpg"
-                  alt="Front sign"
-                />
-                <div class="gallery-caption">Front sign</div>
-              </div>
-
-              <!-- Accessible entrance -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_outside_front_view2.jpg"
-                  alt="Accessible entrance"
-                />
-                <div class="gallery-caption">Accessible entrance</div>
-              </div>
-
-              <!-- Living Room -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_living_room1.jpg"
-                  alt="Living Room"
-                />
-                <div class="gallery-caption">Living Room</div>
-              </div>
-
-              <!-- Kitchen -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_kitchen.jpg"
-                  alt="Kitchen"
-                />
-                <div class="gallery-caption">Kitchen</div>
-              </div>
-
-              <!-- Basement Kitchen -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_basement_kitchen1.jpg"
-                  alt="Basement Kitchen"
-                />
-                <div class="gallery-caption">Basement Kitchen</div>
-              </div>
-
-              <!-- Bedroom -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_bedroom1.jpg"
-                  alt="Bedroom"
-                />
-                <div class="gallery-caption">Bedroom</div>
-              </div>
-
-              <!-- Bathroom -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_bathroom2.jpg"
-                  alt="Bathroom"
-                />
-                <div class="gallery-caption">Bathroom</div>
-              </div>
-
-              <!-- Half Bath -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_half-bath.jpg"
-                  alt="Half Bath"
-                />
-                <div class="gallery-caption">Half Bath</div>
-              </div>
-
-              <!-- Laundry -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_laundry1.jpg"
-                  alt="Laundry Room"
-                />
-                <div class="gallery-caption">Laundry Room</div>
-              </div>
-
-              <!-- Breakfast Nook -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_breakfast_nook.jpg"
-                  alt="Breakfast Nook"
-                />
-                <div class="gallery-caption">Breakfast Nook</div>
-              </div>
-
-              <!-- Meeting Room -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_meeting_room.jpg"
-                  alt="Meeting Room"
-                />
-                <div class="gallery-caption">Meeting Room</div>
-              </div>
-
-              <!-- Front Entrance -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_front_entrance1.jpg"
-                  alt="Front Entrance"
-                />
-                <div class="gallery-caption">Front Entrance</div>
-              </div>
-
-              <!-- Staircase -->
-              <div class="gallery-item" onclick="openModal(this)">
-                <img
-                  src="public/images/womens-house/womens_house_stair_first-to-second-floor.jpg"
-                  alt="Stairs to Second Floor"
-                />
-                <div class="gallery-caption">Stairs to Second Floor</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="info-section">
-            <h3>Contact Us</h3>
-            <p>
-              For more information about availability and admissions, please
-              reach out to us.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- About Page -->
-      <div id="about" class="page">
-        <div class="page-content">
-          <h2>About Us</h2>
+        <a href="about.html" class="block">
           <img src="public/images/csh-tan-logo.png" alt="About Us" />
-
-          <div class="info-section">
-            <h3>Our Mission</h3>
-            <p>
-              Cusma Sober Housing is dedicated to providing safe, supportive,
-              and affordable sober living environments for individuals in
-              recovery. We believe that stable housing is a crucial component of
-              long-term sobriety and personal growth.
-            </p>
+          <div class="block-content">
+            <h2>About Us</h2>
+            <p>Meet our team</p>
           </div>
+        </a>
 
-          <div class="info-section">
-            <h3>Our Approach</h3>
-            <p>
-              We create structured, peer-supported environments where residents
-              can focus on their recovery while building life skills and
-              developing healthy relationships. Our homes emphasize
-              accountability, mutual support, and personal responsibility.
-            </p>
-          </div>
-
-          <div class="info-section">
-            <h3>What We Offer</h3>
-            <ul class="info-list">
-              <li>Structured sober living environment</li>
-              <li>Peer support and accountability</li>
-              <li>Connection to recovery resources</li>
-              <li>Life skills development</li>
-              <li>Community and fellowship</li>
-              <li>Affordable housing options</li>
-            </ul>
-          </div>
-
-          <div class="info-section">
-            <h3>Our Team</h3>
-            <p>
-              Our team consists of dedicated individuals who are passionate
-              about supporting those in recovery. Many of our staff members are
-              in recovery themselves and understand the challenges and triumphs
-              of the journey.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donate Page -->
-      <div id="donate" class="page">
-        <div class="page-content">
-          <h2>Donate</h2>
+        <a href="donate.html" class="block">
           <img src="public/images/csh-slogan-logo.png" alt="Donate" />
-
-          <div class="info-section">
-            <h3>Help Keep Sober Living Affordable and Available</h3>
-            <p>
-              Your generous donations help us maintain affordable housing
-              options for individuals working on their recovery. Every
-              contribution makes a difference in someone's journey to sobriety.
-            </p>
+          <div class="block-content">
+            <h2>Donate</h2>
+            <p>Help keep sober living affordable and available</p>
           </div>
-
-          <div class="info-section">
-            <h3>How Your Donation Helps</h3>
-            <ul class="info-list">
-              <li>Subsidize rent for residents in financial need</li>
-              <li>Maintain and improve our facilities</li>
-              <li>Provide recovery resources and materials</li>
-              <li>Support community activities and programs</li>
-              <li>Ensure 24/7 availability of support</li>
-              <li>Expand our capacity to serve more individuals</li>
-            </ul>
-          </div>
-
-          <div class="info-section">
-            <h3>Ways to Give</h3>
-            <p>
-              We accept donations of all sizes. Whether it's a one-time gift or
-              a recurring contribution, your support helps us continue our
-              mission of providing safe, supportive housing for those in
-              recovery.
-            </p>
-            <button
-              class="donate-btn"
-              onclick="
-                alert(
-                  'Thank you for your interest in donating! Please contact us for donation information.',
-                )
-              "
-            >
-              Make a Donation
-            </button>
-          </div>
-
-          <div class="info-section">
-            <h3>Other Ways to Support</h3>
-            <ul class="info-list">
-              <li>Volunteer your time</li>
-              <li>Donate household items</li>
-              <li>Spread awareness about our mission</li>
-              <li>Become a community partner</li>
-            </ul>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
 
     <div class="footer">
       <p>Built by Elizabeth Cusma</p>
-      <p>&copy; 2026 Cusma Sober Housing - Safe, Supportive, Sober</p>
+      <p>&copy; 2026 Cusma Sober Housing</p>
     </div>
-
-    <!-- Photo Modal -->
-    <div id="photoModal" class="modal" onclick="closeModal()">
-      <span class="close-modal">&times;</span>
-      <img class="modal-content" id="modalImg" />
-    </div>
-
-    <script>
-      function navigateTo(pageId) {
-        // Hide all pages
-        const pages = document.querySelectorAll(".page");
-        pages.forEach((page) => page.classList.remove("active"));
-
-        // Remove active class from all nav links
-        const navLinks = document.querySelectorAll(".nav-link");
-        navLinks.forEach((link) => link.classList.remove("active"));
-
-        // Show selected page
-        const targetPage = document.getElementById(pageId);
-        if (targetPage) {
-          targetPage.classList.add("active");
-
-          // Add active class to corresponding nav link
-          const activeLink = document.querySelector(`[data-page="${pageId}"]`);
-          if (activeLink) {
-            activeLink.classList.add("active");
-          }
-
-          // Scroll to top
-          window.scrollTo(0, 0);
-        }
-      }
-
-      // Handle navigation clicks
-      document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          const pageId = this.getAttribute("data-page");
-          navigateTo(pageId);
-        });
-      });
-
-      // Handle browser back/forward buttons
-      window.addEventListener("popstate", function (e) {
-        const hash = window.location.hash.substring(1) || "home";
-        navigateTo(hash);
-      });
-
-      // Photo gallery modal functions
-      function openModal(galleryItem) {
-        event.stopPropagation();
-        const modal = document.getElementById("photoModal");
-        const modalImg = document.getElementById("modalImg");
-        const img = galleryItem.querySelector("img");
-
-        modal.classList.add("active");
-        modalImg.src = img.src;
-      }
-
-      function closeModal() {
-        const modal = document.getElementById("photoModal");
-        modal.classList.remove("active");
-      }
-
-      // Close modal on escape key
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-          closeModal();
-        }
-      });
-    </script>
   </body>
 </html>
