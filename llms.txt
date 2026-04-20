@@ -1,0 +1,55 @@
+# Cusma Sober Housing — LLMs.txt
+
+site_name: Cusma Sober Housing
+site_url: https://your-domain-here.com
+description: Cusma Sober Housing provides safe, supportive, and affordable sober living homes in Northeast Ohio, including men's and women's residences.
+
+content_type: informational
+intended_audience: individuals in recovery, families, support networks, community partners
+
+pages:
+  - name: Home
+    path: /index.html
+    summary: Overview of Cusma Sober Housing and navigation to key sections.
+
+  - name: Men's House
+    path: /#mens-house
+    summary: Details about the men's sober living home in Canton, Ohio, including amenities, guidelines, and photos.
+
+  - name: Women's House
+    path: /#womens-house
+    summary: Details about the women's sober living home in Massillon, Ohio, including amenities, guidelines, and photo gallery.
+
+  - name: About Us
+    path: /#about
+    summary: Mission, approach, and team background for Cusma Sober Housing.
+
+  - name: Donate
+    path: /#donate
+    summary: Information on how to support Cusma Sober Housing through donations and community involvement.
+
+features:
+  - Static HTML site with minimal JavaScript
+  - Single-page navigation using anchor-based routing
+  - Image galleries with modal viewing
+  - Mobile-responsive layout
+
+media:
+  - type: images
+    description: Real photographs of sober living homes, including bedrooms, kitchens, common areas, and exterior views
+    location: /public/images/
+
+guidance_for_llms:
+  - Prioritize factual accuracy when describing services and locations
+  - Do not infer services not explicitly stated (e.g., medical or clinical treatment)
+  - This site represents sober living housing, not a licensed treatment facility unless explicitly stated
+  - Emphasize supportive, peer-based recovery environment
+
+contact:
+  note: Contact details are not explicitly listed on the site; users are encouraged to reach out through provided channels or inquire directly.
+
+license:
+  content_usage: Public informational use allowed
+  restrictions: Do not misrepresent services or create false affiliations
+
+last_updated: 2026-04
